@@ -21,6 +21,10 @@ $(function () {
     $(this).toggleClass('product-item__favorite--active')
   });
 
+   $('.catalog__filter-button').on('click', function () {
+     $(this).toggleClass('catalog__filter-button--active')
+   });
+
   $('.product-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
