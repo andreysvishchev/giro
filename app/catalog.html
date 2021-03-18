@@ -114,7 +114,7 @@
           <button class="catalog__filter-button">Все</button>
         </div>
         <div class="catalog__filter-btn">
-          <select>
+          <select class="filter-style">
             <option value=""></option>
             <option value=""></option>
             <option value=""></option>
@@ -143,8 +143,40 @@
         </div>
       </div>
       <div class="catalog__inner">
-        <aside class="catalog__inner-aside">
+        <aside class="catalog__inner-aside aside-filter">
+          <div class="tabs">
+            <div class="tabs__items aside-filter__tabs">
+              <a class="tabs__item aside-filter__tab tabs__item--active span" href="#"><span>Параметры</span></a>
+              <a class="tabs__item aside-filter__tab" href="#"><span>По марке</span></a>
+            </div>
+            <div class="tabs__container">
+              <div class="tabs__content aside-filter__tabs-content tabs__content--active">
 
+                <form class="aside-filter__form">
+                  <ul class="aside-filter__list">
+                    <li class="aside-filter__item-drop">
+                      <p class="aside-filter__item-title aside-filter__title-drop">Наличие</p>
+                      <div class="aside-filter__content">
+                        <div class="aside-filter__content-box">
+                          <label class="aside-filter__item-label">
+                            <input class="filter-style" type="checkbox">В наличие</label>
+                        </div>
+                        <div class="aside-filter__content-box">
+                          <label class="aside-filter__item-label">
+                            <input class="filter-style" type="checkbox">Под заказ</label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="aside-filter__item-drop"></li>
+                    <li class="aside-filter__item-drop"></li>
+                    <li class="aside-filter__item"></li>
+                  </ul>
+                </form>
+
+              </div>
+              <div class="tabs__content aside-filter__tabs-content"></div>
+            </div>
+          </div>
         </aside>
         <div class="catalog__inner-list">
           <div class="product-item">

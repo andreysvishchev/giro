@@ -139,6 +139,7 @@
     z-index: 5;
     outline: none;
     transition: all .3s;
+
     &:hover {
       transform: translateY(-50%) scale(1.5);
     }
@@ -443,6 +444,7 @@
     z-index: 5;
     transition: all .3s;
     outline: none;
+
     &:hover {
       transform: translateY(-50%) scale(1.5);
     }
@@ -815,6 +817,85 @@
     }
   }
 }
+
+.aside-filter {
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__tab {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    color: #C4C4C4;
+    width: 50%;
+    text-transform: uppercase;
+
+    &.tabs__item--active {
+      color: $main;
+      @extend %sf-700;
+
+      span {
+        border-bottom: 2px solid $accent;
+        display: inline-block;
+        padding-bottom: 7px;
+      }
+    }
+  }
+
+  &__list {}
+
+  &__item-drop {
+    margin: 40px 0;
+  }
+
+  &__item-title {
+    font-size: 16px;
+    line-height: 19px;
+    @extend %sf-600;
+    padding-left: 26px;
+  }
+
+  &__title-drop {
+    margin-bottom: 20px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/arrow-drop.svg');
+      width: 12px;
+      height: 8px;
+      left: 0;
+      bottom: 5px;
+      transition: all .3s;
+      cursor: pointer;
+    }
+
+    &--active {
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__content-box {
+    width: 50%;
+  }
+
+  &__item-label {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.filter-style {}
 
 
 

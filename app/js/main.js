@@ -24,6 +24,11 @@ $(function () {
    $('.catalog__filter-button').on('click', function () {
      $(this).toggleClass('catalog__filter-button--active')
    });
+  
+  $('.aside-filter__title-drop').on('click', function () {
+    $(this).toggleClass('aside-filter__title-drop--active');
+    $(this).next().slideToggle('200')
+  });
 
   $('.product-slider').slick({
     slidesToShow: 4,
@@ -31,5 +36,7 @@ $(function () {
     prevArrow: '<button class="slick-btn product-slider__slider-btn  product-slider__slider-btnprev "><img src="images/icons/arrow-black-left.svg" alt=""></button>',
     nextArrow: '<button class="slick-btn product-slider__slider-btn  product-slider__slider-btnnext "><img src="images/icons/arrow-black-right.svg" alt=""></button>'
   });
+
+  $('.filter-style').styler();
 
 });
