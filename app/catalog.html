@@ -157,18 +157,40 @@
                     <li class="aside-filter__item-drop">
                       <p class="aside-filter__item-title aside-filter__title-drop">Наличие</p>
                       <div class="aside-filter__content">
-                        <div class="aside-filter__content-box">
+                        <div class="aside-filter__content-box aside-filter__content-checkbox">
                           <label class="aside-filter__item-label">
                             <input class="filter-style" type="checkbox">В наличие</label>
                         </div>
-                        <div class="aside-filter__content-box">
+                        <div class="aside-filter__content-box aside-filter__content-checkbox">
                           <label class="aside-filter__item-label">
                             <input class="filter-style" type="checkbox">Под заказ</label>
                         </div>
                       </div>
                     </li>
-                    <li class="aside-filter__item-drop"></li>
-                    <li class="aside-filter__item-drop"></li>
+                    <li class="aside-filter__item-drop">
+                      <p class="aside-filter__item-title aside-filter__title-drop">Новинки</p>
+                      <div class="aside-filter__content">
+                        <div class="aside-filter__content-box aside-filter__content-radio">
+                          <label class="aside-filter__item-label">
+                            <input class="filter-style" type="radio" name="new">Все</label>
+                        </div>
+                        <div class="aside-filter__content-box aside-filter__content-radio">
+                          <label class="aside-filter__item-label">
+                            <input class="filter-style" type="radio" name="new">Новинки</label>
+                        </div>
+                        <div class="aside-filter__content-box aside-filter__content-radio">
+                          <label class="aside-filter__item-label">
+                            <input class="filter-style" type="radio" name="new">Акции</label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="aside-filter__item-drop">
+                      <p class="aside-filter__item-title aside-filter__title-drop">Цена</p>
+                      <div class="aside-filter__content">
+                        <input type="text" class="js-range-slider" name="my_range" value="" 
+                          data-min="100000" data-max="500000" data-from="150000" data-to="300000"/>
+                      </div>
+                    </li>
                     <li class="aside-filter__item"></li>
                   </ul>
                 </form>
