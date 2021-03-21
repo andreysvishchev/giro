@@ -30,6 +30,24 @@ $(function () {
     $(this).next().slideToggle('200')
   });
 
+  $('.aside-filter__extra').on('click', function () {
+    $(this).toggleClass('aside-filter__extra--active');
+    $(this).next().slideToggle('200')
+  });
+
+  $('.catalog__filter-grid').on('click', function () {
+    $(this).addClass('catalog__button--active')
+    $('.catalog__filter-line').removeClass('catalog__button--active')
+    $('.product-item').removeClass('product-item--line')
+  });
+
+  $('.catalog__filter-line').on('click', function () {
+    $(this).addClass('catalog__button--active')
+    $('.catalog__filter-grid').removeClass('catalog__button--active')
+    $('.product-item').addClass('product-item--line')
+  });
+
+
   $('.product-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
