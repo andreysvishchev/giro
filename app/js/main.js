@@ -47,7 +47,6 @@ $(function () {
     $('.product-item').addClass('product-item--line')
   });
 
-
   $('.product-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -62,5 +61,13 @@ $(function () {
     min: 100000,
     max: 500000
   });
+
+   $(".rateYo").rateYo({
+     starWidth: "23px",
+     ratedFill: "#1C62CD",
+     normalFill: "#C4C4C4",
+     readOnly: true,
+     spacing: "7px"
+   });
 
 });
